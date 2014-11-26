@@ -7,6 +7,10 @@ from django.contrib import admin
 
 urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
-    url(r'^$', TemplateView.as_view(template_name='index.html'), name='home'),
+    url(r'^$', TemplateView.as_view(template_name='index.html'), name=''),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^home', TemplateView.as_view(template_name='home.html'), name='home'),
+    url(r'^products', TemplateView.as_view(template_name='products.html'), name='products'),
+    url(r'^product', TemplateView.as_view(template_name='product.html'), name='product')
+
 )

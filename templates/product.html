@@ -1,4 +1,5 @@
-{% load static %}<!DOCTYPE html>
+{% load static %}
+<!DOCTYPE html>
 <!-- saved from url=(0050)http://getbootstrap.com/examples/starter-template/ -->
 <html lang="en">
 <head>
@@ -32,24 +33,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand">Timetracker</a>
+            <a class="navbar-brand" href="">Timetracker</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="home">Home</a></li>
+                <li><a href="home">Home</a></li>
                 <li><a href="products">Products</a></li>
-                <li><a href="product">Product</a></li>
-
+                <li class="active"><a href="product">Product</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
     </div>
 </nav>
 
+
 <div class="container">
 
     <div class="starter-template">
-        Hello from my first Django Application.
+        <h1 title="Choose one">Concrete product</h1>
+        <li class="list-group-item">Product 1</li>
+  <li class="list-group-item">Product 2</li>
+  <li class="list-group-item">Product 3</li>
+  <li class="list-group-item">Product 4</li>
+  <li class="list-group-item">Product 5</li>
     </div>
 
 </div>
@@ -61,7 +67,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="jquery.min.js"></script>
 <script src="bootstrap.min.js"></script>
-
 
 </body>
 </html>
